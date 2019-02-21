@@ -1,0 +1,111 @@
+Lista 02 - Data: 18/02/2019
+
+
+01) Faça um jogo multiplayer (multi-jogador) de par ou ímpar. Escolha o nome de cada jogador. Cada jogador escolhe par ou ímpar. Cada jogador entra com um número entre 0 e 5. Faça a soma entre os dois valores. Verifique se a soma é par ou ímpar. Exiba na tela todas as informações. Nome do jogo, nome dos jogadores, quem escolheu par e quem escolheu ímpar. Quais valores cada jogador entrou. Quem foi o vencedor da partida.
+
+
+02) Faça um jogo de pedra-papel-tesoura. Receba o nome de cada jogador. Cada jogador escolhe pedra, ou papel, ou tesoura. Condições de vitória: pedra vence tesoura; tesoura vence papel; papel vence pedra. Exiba todas as informações do jogo na tela.
+
+
+03) Faça um jogo onde o usuário escolhe um naipe de uma carta (1 - ouros, 2 - copas, 3 - paus, 4 - espadas). Escolhe um valor (1 - ás, 2 - dois, 3 - três, …, 11 - valete, 12 - rainha/dama, 13 - rei). Exibir na tela uma mensagem com a descrição da carta escolhida. Ex.: “Você escolheu a carta dois de ouros”. “Você escolheu a carta rei de copas”. “Você escolheu a carta valete de paus”. Etc…
+
+
+04) Faça um código que imprima os números de 0 a 99, porém apenas dez números por linha.
+
+05) Faça um código que receba um número inteiro do usuário, e imprima esse número, se ele é positivo ou negativo, se ele é par ou ímpar. O programa só termina se o usuário digitar 0 (zero).
+
+06) Faça um menu de um jogo com quatro opções. [1] Jogar. [2] Carregar jogo. [3] Créditos. [4] Sair do jogo. Para cada opção que o jogador escolher, exiba uma mensagem na tela. O jogo só termina se o jogador escolher a opção [4] Sair do jogo. Coloque o menu dentro de um while ou do-while. Use sua criatividade nas mensagens do jogo, assim como no exercício 4 da lista 2.
+********
+* JOGO *
+********
+[1] Jogar. 
+[2] Carregar jogo. 
+[3] Créditos. 
+[4] Sair do jogo.
+
+07) Escreva um código que leia 15 valores reais, encontre e imprima o maior e o menor deles.
+
+
+08) Faça um código em C para exibir as tabuadas (multiplicação) de 0 a 9.
+
+0 x 0 = 0
+
+0 x 1 = 0
+
+…
+
+1 x 0 = 0
+
+1 x 1 = 1
+
+…
+
+2 x 0 = 0
+
+2 x 1 = 2
+
+…
+
+9 x 8 = 72
+
+9 x 9 = 81
+
+
+09) Faça um código que verifique e mostre os números entre 1000 e 2000 que, quando divididos por 11 produzam resto 5.
+
+
+10) Faça um código que imprima os números entre 1 e 100, porém a cada múltiplo de 4, imprima a palavra "plim" ao invés do número.
+
+1 2 3 plim 5 6 7 plim 9 10 ...
+
+
+
+
+Lista 01 - Data: 11/02/2019
+
+
+01) Fazer um programa que receba um número inteiro, e verifique se ele está entre 100 e 200. Se estiver dentro desta faixa, imprima “Você digitou um número entre 100 e 200”, senão imprima “Você digitou um número fora da faixa”.
+
+
+02) Fazer um programa que receba três stats do jogador: vida, ataque e defesa. A experiência do jogador (XP) é a média entre os três stats. Imprima o nível do jogador conforme a seguir (0 a 25 XP) novato, (26 a 50 XP) mago, (51 a 75 XP) mago supremo, (76 a 100 XP)  lorde das magias.
+
+
+03) Faça um programa que imprima o nome de duas equipes e receba a quantidade de vitórias, empates e derrotas de cada equipe. Cada vitória valem 3 pontos, cada empate vale 1 ponto, derrota não vale ponto. Imprimir o nome de cada equipe (a sua escolha), o número de vitórias, empates e derrotas, e a pontuação total.
+
+
+04) Faça um programa que receba a quantidade de vitórias, recebe a quantidade de derrotas, recebe a quantidade de empates. Exibe na tela o nome da equipe (a sua escolha), a quantidade de vitórias, derrotas e empates, e os respectivos percentuais. Ex.: 8 vitórias - 53%, 5 derrotas - 33%, 2 empates - 13%.
+
+
+05) Faça um jogo inspirado no modelo abaixo:
+
+
+********************
+
+* Jogo da floresta *
+
+********************
+
+Você dormiu e acordou no meio de uma floresta. O que você quer fazer?
+
+1 - Continuar parado.
+
+2 - Andar rumo ao norte.
+
+3 - Andar rumo ao sul.
+
+4 - Andar rumo ao leste.
+
+5 - Andar rumo ao oeste.
+
+
+Para cada opção que o jogador escolher, imprima uma mensagem diferente. Exemplos:
+
+“Você escolheu ficar parado e foi devorado por um lobo de gelo.”
+
+“Você andou rumo ao norte e foi encontrado por um clã de guerreiros.”
+
+“Você andou rumo ao oeste e caiu no precipício e morreu.”
+
+
+Use sua criatividade para exibir as consequências de cada ação que o jogador escolher. Invente um nome interessante para o jogo também.
+
