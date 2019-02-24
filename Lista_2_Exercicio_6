@@ -1,0 +1,75 @@
+#include<stdio.h>
+#include<locale.h>
+#include<string.h>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese"); //Acentuação
+		
+	int opmenu, contaDigitos, v1, v2, v3;
+	int resultado;
+
+	
+	
+	printf("-------------------MENU------------------\n\n\n");
+	printf("[1] Jogar\n");
+	printf("[2] Carregar Jogo\n");
+	printf("[3] Créditos\n");
+	printf("[4] Sair do Jogo\n\n\n");
+	
+	scanf("%i", &opmenu);
+	
+printf("\n");
+	
+	if(opmenu == 1){
+		printf("Ola Meu nome é Jheymison!\n\n");
+		printf("O Jogo é de Matemática - uma soma Simples!\n");
+		printf("Irei Descobrir o resultado da Soma com a escolha de 4 Numeros de 0 até 9 de sua preferência!!!\n\n");
+		
+		//Começo do Jogo - 1° Valor Pedido
+		printf("Digite 4 Números de 0 até 9:\n");
+		scanf("%i", &v1);
+		
+		printf("\n");
+		
+		//Resultado da Soma
+		resultado = v1 + 19998;
+		
+		//Condição para Contar os Digitos
+		if (v1 == 0){
+			
+			contaDigitos = 1;
+			
+			}else{
+				
+				while (v1 != 0){
+					contaDigitos = contaDigitos + 1;
+					v1 = v1 / 10;
+
+	 			}
+			}
+		//Condição para Ver se digitou os 4 Numeros
+		if(contaDigitos < 4){
+			printf("ERRO - Digite 4 Números de 0 até 9!\n");
+
+		}
+		
+		
+		
+		printf("O Resultado da Soma Que iremo realizar é: %i , GUARDE ESTE NUMERO\n\n", resultado);
+		
+		printf("\n");
+		
+		printf("Digite mais 4 Números de 0 até 9:\n");
+		scanf("%i", &v2);
+		
+		printf("\n");
+		
+		printf("Agora é Minha Vez! Vou escolher 4 Numeros de 0 Até 9!\n");
+		
+		
+
+		
+	}
+	
+	
+}
