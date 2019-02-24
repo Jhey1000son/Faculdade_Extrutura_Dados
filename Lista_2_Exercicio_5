@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<locale.h>
+#include<string.h>
+
+int main(){
+	
+	setlocale(LC_ALL, "Portuguese"); //Acentuação
+	
+	//Variaveis
+	int x;
+	
+	//Opção para parar
+	printf("Caso queira Parar digite 0\n\n\n");
+	
+	do{
+		
+		printf("Digite um Numero Inteiro: ");
+		scanf("%i", &x);
+		
+
+		
+		// Condição para Positivo e Negativo
+		if(x < 0){
+			printf("Este Numero %i é Negativo!\n", x);
+		} else{
+			printf("Este Numero %i é Positivo!\n", x);
+		}
+		
+		//Condição para Par ou Impar
+		if(x % 2 == 0){
+			printf("Este Numero %i é Par!\n", x);
+		} else {
+			printf("Este Numero %i é Impar!\n", x);
+		}
+		
+		printf("\n");
+		
+	} while(x != 0);
+	
+	return 0;
+	
+}
