@@ -1,84 +1,108 @@
 #include<stdio.h>
+#include<locale.h>
+#include<string.h> 
 
 int main(){
+	setlocale(LC_ALL, "Portuguese"); //Acentuação
 	
+	//Váriaveis
 	int naipe, valor;
+	char carta1[60], carta2[60];
 	
+	// Escolha do Naipe
 	printf("Escolha o Naipe:\n");
 	printf("1 - ouros, 2 - copas, 3 - paus, 4 - espadas: \n");
 	scanf("%i", &naipe);
 	
-	if(naipe == 1){
-		naipe == "ouros";
+	//Condições para naipe escolhido
+	if(naipe >= 1 && naipe <= 4){
+	
+		if(naipe == 1){
+			strcpy(carta1, "ouros");
+		}
+		
+		if(naipe == 2){
+			strcpy(carta1, "copas");
+		}
+		
+		if(naipe == 3){
+			strcpy(carta1, "paus");
+		}
+		
+		if(naipe == 4){
+			strcpy(carta1, "espadas");
+		}
+	} else{
+		printf("Erro - Escolha Numeros entre 1 e 4");
+		exit(0);
 	}
 	
-	if(naipe == 2){
-		naipe == "copas";
-	}
-	
-	if(naipe == 3){
-		naipe == "paus";
-	}
-	
-	if(naipe == 4){
-		naipe == "espadas";
-	}
-	
+	//Escolha do Valor da Carta
 	printf("Escolha um Valor: \n");
 	printf("1 - as, 2 - dois, 3 - tres, 4 - quatro, 5 - cinco, 6 - seis, 7 - sete, 8 - oito, 9 - nove, 10 - dez, 11 - valete, 12 - dama, 13 - rei\n");
 	scanf("%i", &valor);
 	
-	if(valor == 1){
-		valor == "as";
+	//Condições para o valor da carta
+	if(valor >= 1 && valor <= 13){
+		if(valor == 1){
+			strcpy(carta2, "as");
+		}
+		
+		if(valor == 2){
+			strcpy(carta2, "dois");
+		}
+		
+		if(valor == 3){
+			strcpy(carta2, "tres");
+		}
+		
+		if(valor == 4){
+			strcpy(carta2, "quatro");
+		}
+		
+		if(valor == 5){
+			strcpy(carta2, "cinco");
+		}
+		
+		if(valor == 6){
+			strcpy(carta2, "seis");
+		}
+		
+		if(valor == 7){
+			strcpy(carta2, "sete");
+		}
+		
+		if(valor == 8){
+			strcpy(carta2, "oito");
+		}
+		
+		if(valor == 9){
+			strcpy(carta2, "nove");
+		}
+		
+		if(valor == 10){
+			strcpy(carta2, "dez");
+		}
+		
+		if(valor == 11){
+			strcpy(carta2, "valete");
+		}
+		
+		if(valor == 12){
+			strcpy(carta2, "dama");
+		}
+		
+		if(valor == 13){
+			strcpy(carta2, "rei");
+		}
+	} else {
+		printf("Erro - Escolha Numeros entre 1 e 13");
+		exit(0);
 	}
+		
+	//Resultado
+	printf("Você escolheu a Carta: %s de %s \n", carta2, carta1);
 	
-	if(valor == 2){
-		valor == "dois";
-	}
+	return 0;
 	
-	if(valor == 3){
-		valor == "tres";
-	}
-	
-	if(valor == 4){
-		valor == "quatro";
-	}
-	
-	if(valor == 5){
-		valor == "cinco";
-	}
-	
-	if(valor == 6){
-		valor == "seis";
-	}
-	
-	if(valor == 7){
-		valor == "sete";
-	}
-	
-	if(valor == 8){
-		valor == "oito";
-	}
-	
-	if(valor == 9){
-		valor == "nove";
-	}
-	
-	if(valor == 10){
-		valor == "dez";
-	}
-	
-	if(valor == 11){
-		valor == "valete";
-	}
-	
-	if(valor == 12){
-		valor == "dama";
-	}
-	
-	if(valor == 13){
-		valor == "rei";
-	}
-	
-	printf("Você escolheu a carta %i de %i \n", valor, naipe);
 }
