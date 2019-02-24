@@ -1,0 +1,81 @@
+#include<stdio.h>
+#include<locale.h>
+#include<string.h> 
+int main(){
+	setlocale(LC_ALL, "Portuguese"); //Acentuação
+	
+	char nome1[60], nome2[60];
+	char opn1[60], opn2[60];
+	int opnum1, opnum2;
+	int soma;
+	
+	printf("Digite o player 1:\n");
+	scanf("%s", nome1);
+	
+	printf("Par ou Impar \n");
+	scanf("%s", opn1);
+	
+	printf("Digite um numero entre 0 a 5: \n");
+	scanf("%i", &opnum1);
+	
+	printf("\n");
+	
+	printf("Digite o player 2:\n");
+	scanf("%s", nome2);
+	
+	//If para determinar par ou impar para o player 2
+	if(opn1 == "Par"){
+		opn2 == "Impar";
+		strcpy(opn2, "Impar");
+	} else {
+		opn2 == "Par";
+		strcpy(opn2, "Par");
+	}
+	
+	printf("Digite um numero entre 0 a 5: \n");
+	scanf("%i", &opnum2);
+	
+	soma = opnum1 + opnum2;
+	
+	printf("Soma = %i \n", soma);
+	
+	printf("\n");
+	
+	//determinar se é par ou impar
+	if(soma % 2 == 0){		
+		printf("Resultado = Par \n");
+	} else{
+		printf("Resultado = Impar");
+	}
+	
+	printf("\n");
+	
+	printf("-----Informações-----\n");
+	printf("\n");
+	printf("Player 1 = %s\n", nome1);
+	printf("Opção escolhida: %s\n", opn1);
+	printf("Numero escolhido: %i\n", opnum1);
+	
+	printf("\n");
+	
+	printf("\n");
+	printf("Player 2 = %s\n", nome2);
+	printf("Opção escolhida: %s\n", opn2);
+	printf("Numero escolhido: %i\n", opnum2);
+	
+	printf("\n");
+	
+	if(soma % 2 ==0){
+		if(opn1 == "Par" && opn2 == "Impar"){
+			printf("-----------Ganhador----------\n");
+			printf("Player 1: %s", nome1);
+			printf("Escolheu: %s ", opn1);
+			
+		} else {
+			printf("-----------Ganhador----------\n");
+			printf("Player 2: %s\n", nome2);
+			printf("Escolheu: %s ", opn2);
+		}
+}
+
+}
