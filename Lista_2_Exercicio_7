@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<locale.h>
+#include<string.h>
+
+int main(){
+	
+	float i, x, maior=-9999, menor=9999;
+	
+	for(i=0;i<15;i++){
+		
+		printf("Digite qualquer Numero: ");
+		scanf("%f", &x);
+		
+		if(x > maior){
+			maior = x;
+		}
+		if(x < menor){
+			menor = x;
+		}
+		
+	}
+	
+	printf("Maior: %f e Menor: %f\n", maior, menor);
+	
+	
+	
+}
